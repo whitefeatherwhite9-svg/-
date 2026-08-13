@@ -1,0 +1,6 @@
+{
+  "name": "敦煌遗境：守望千年的碎片",
+  "description": "莫高窟壁画数字修复游戏。包含虚拟洞窟漫游、壁画解谜与交互修复、AI神兽NPC文化对话、古风音律体验与通关文牒。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

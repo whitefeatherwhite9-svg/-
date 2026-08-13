@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    background-color: #f4ece1;
+    color: #3a352a;
+    background-image: radial-gradient(#e8dfd1 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+}
+
+/* Custom scrollbars for editorial aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e8dfd1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9a047;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b84c3a;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+/* Editorial paper shadow & corner decorations */
+.editorial-paper {
+  background-color: #f4ece1;
+  border: 1px solid #d9a047;
+  box-shadow: 0 10px 30px -10px rgba(58, 53, 42, 0.15);
+}
+
+.editorial-card {
+  background-color: rgba(244, 236, 225, 0.95);
+  border: 1px solid rgba(217, 160, 71, 0.5);
+  color: #3a352a;
+}
